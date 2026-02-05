@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # ✅ Configure Google AI Studio API Key
-API_KEY = "AIzaSyCLVJL6RuQa3l7sDzzHQYzXdNl1YQobhxE"  # 🔥 Replace with your actual Google AI Studio API key
+API_KEY = "apikey"  # 🔥 Replace with your actual Google AI Studio API key
 genai.configure(api_key=API_KEY)
 
 # ✅ Load Gemini Model (Use "gemini-1.5-flash" for free access)
@@ -83,4 +83,5 @@ if st.session_state.get("show_modify_option", False):
 
 # 🎨 Footer
 st.markdown("---")
+
 st.markdown("Made with ❤️")
